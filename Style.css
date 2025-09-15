@@ -1,0 +1,190 @@
+      :root {
+  /*========== Colors ==========*/
+
+  --first-color: hsl(230, 62%, 56%);
+  --title-color: hsl(230, 70%, 16%);
+  --text-color: hsl(230, 16%, 45%);
+  --background:rgb(11, 11, 17) ;
+  --border-color: hsl(230, 50%, 90%);
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(230, 100%, 96%);
+  --container-color: hsl(230, 100%, 97%);
+
+         }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: hsl(230, 100%, 96%);
+        }
+        .Zoglid{
+            padding-inline: 100px;
+            margin-bottom: 100px;
+        }
+        a{
+            text-decoration: none;
+            font-family: sans-serif;
+            color: black;
+        }
+        p{
+            font-family: sans-serif;
+        }
+        ul{
+            list-style: none;
+        }
+
+        /* Header */
+        header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            background-color: inherit;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding-block:30px;
+        }
+        .right-head{
+            display: flex;
+            gap: 80px;
+        }
+        .right-head a:hover{
+            color: var(--first-color);
+            text-decoration: underline;
+        }
+        header .menu{
+            display: flex;
+            gap: 50px;
+            font-size: 17px;
+        }
+        header .menu a{
+            color: rgb(99, 99, 99);
+            text-underline-offset: 4px;
+        }
+        header .items{
+            display: flex;
+            gap: 12px;
+            font-size: 18px;
+        }
+        header .items i:hover{
+           color: var(--first-color);
+           cursor: pointer;
+        }
+        header .Logo a{
+            font-size: 19px;
+            color: var(--first-color);
+        }
+        header .menu .home{
+            color: var(--first-color);
+        }
+        header .menu .home:hover{
+            color: var(--title-color);
+        }
+        #moon:hover{
+            transition: .7s;
+           transform: rotate(-90deg);
+        }
+        
+
+        /* Home */
+        .home-page{
+            padding-top: 90px;
+            display: flex;
+            margin-top: 100px;
+        }
+        .home-page .left{
+            width: 40%;
+        }
+        .home-page .right{
+            width: 60%;
+        }
+        .home-page .title{
+            font-size: 2.7rem;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .home-page .paragraf{
+            font-size: 15px;
+            line-height: 21px;
+            margin-block: 15px 40px;
+            opacity: .65;
+        }
+        .home-page .explore{
+            padding: 11px 14px;
+            font-size: 16px;
+            color: white;
+            background-color: var(--first-color);
+            border-radius: 3px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: .5px;
+            transition:.6s;
+            border: none;
+            cursor: pointer;
+        }
+        .home-page .explore:hover{
+           transform: translateY(-3px);
+            background-color: blue;
+            box-shadow: 1px 1px 10px black;
+        }
+
+        .home-page .right .content{
+            opacity: .8;
+                }
+                .content img{
+                     margin-left: -5px;
+                }
+        .owl-item.center .content{
+           transform: scale(1.25);
+          opacity: 1;
+           z-index: 2;
+        }
+        .home-foot{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 110px;
+            width: 73%;
+            margin-inline: auto;
+        }
+      .home-foot .card{
+        text-align: center;
+      }
+      .home-foot .card i{
+        font-size: 30px;
+        color: var(--first-color);
+        cursor: pointer;
+        transition: .6s;
+      }
+      .home-foot .card i:hover{
+        transform: rotate(-20deg);
+      }
+      .home-foot .card h2{
+        margin-block: 18px 9px;
+        font-family: none;
+      }
+      .home-foot .card p{
+        opacity: .7;
+      }
+      #sun{
+        display: none;
+        animation:suns 5s linear infinite;
+       
+      }
+      body.dark-mode{
+        background-color: black;
+        color: white;
+        transition: .7s;
+      }
+      body.dark-mode .menu a{
+        color:silver;
+      }
+      @keyframes suns{
+        from{
+            transform: rotate(0);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+      }
+       

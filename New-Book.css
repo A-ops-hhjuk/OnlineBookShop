@@ -62,6 +62,7 @@ body.dark-mode .new-books .card:hover{
 
 .subscribe{
     margin-bottom: 100px;
+    padding-inline:20px;
     text-align: center;
     color: white;
     background: url(img/join-bg.jpg);
@@ -203,4 +204,5 @@ body.dark-mode .right-footer ul a{
 color: blue;
 transform: rotate(-180deg);
 }
+
 

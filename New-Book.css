@@ -77,6 +77,7 @@ body.dark-mode .new-books .card:hover{
 }
 .subscribe h1{
     line-height: 40px;
+    padding-inline:8px;
     margin-bottom: 50px;
     font-size: 2.1rem;
 }
@@ -203,6 +204,7 @@ body.dark-mode .right-footer ul a{
 color: blue;
 transform: rotate(-180deg);
 }
+
 
 
 

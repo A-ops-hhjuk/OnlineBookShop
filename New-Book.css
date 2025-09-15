@@ -1,3 +1,210 @@
+.new-books{
+    padding-top: 30px;
+}
+.new-books .container1{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.new-books .title{
+    text-align: center;
+    font-family: none;
+    margin-bottom: 80px;
+}
+
+.new-books .card{
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    gap: 30px;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.11);
+    border: 1px solid rgba(228, 228, 228, 0.623);
+    cursor: pointer;
+}
+.new-books .card:hover{
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    transition: .6;
+}
+.new-books .card img{
+width: 125px;
+}
+.card .book-info{
+    margin-top: -14px;
+}
+.card .book-info h3{
+    font-size: 1.5rem;
+}
+.card .book-info p{
+    margin-block:8px 15px;
+    display: flex;
+    gap: 10px;
+}
+.card .book-info p del{
+    font-size: 15px;
+    opacity: .6;
+}
+.card .book-info i{
+    color: rgb(0, 47, 255);
+    cursor: pointer;
+}
+.card .book-info div:hover i{
+    color: rgb(111, 189, 209);    
+}
+body.dark-mode .new-books .card{
+    background-color: rgb(12, 17, 27);
+    box-shadow: 1px 1px 10px white;
+}
+body.dark-mode .new-books .card:hover{
+    border: 1px solid rgba(255, 255, 255, 0.562);
+}
+
+.subscribe{
+    margin-bottom: 100px;
+    padding-inline:20px;
+    text-align: center;
+    color: white;
+    background: url(img/join-bg.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-block: 45px;
+    background-attachment: fixed;
+}
+.subscribe h1{
+    line-height: 40px;
+    margin-bottom: 50px;
+    font-size: 2.1rem;
+}
+.subscribe form{
+    width: 300px;
+    margin-inline: auto;
+    margin-top: 25px;
+}
+.subscribe form input{
+    width: 100%;
+    padding: 12px 10px;
+}
+.subscribe form button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 13px 10px;
+    color: white;
+    border: none;
+    background-color: rgb(68, 68, 255);
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .7s;
+}
+.subscribe form button:hover{
+  transform: translateY(-2px);
+  box-shadow: 1px 1px 8px black;
+  background-color: rgb(89, 89, 233);
+}
+
+
+.testimonial{
+    padding-top: 30px;
+}
+.testimonial h1{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.testimonial .card{
+    text-align: center;
+     background-color: white;
+     padding: 25px;
+     border-radius: 3px;
+     border: 1px solid rgba(192, 192, 192, 0.61);
+     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.295);
+}
+.testimonial .card img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    border:3px solid rgb(146, 146, 255);
+    margin-inline: auto;
+}
+.testimonial .card p{
+    margin-block: 8px 16px;
+    font-size: 15px;
+    line-height: 19px;
+    opacity: .7;
+}
+.testimonial .card h3{
+    font-size: 1.5rem;
+}
+.testimonial .card i{
+    color: rgb(55, 55, 252);
+    cursor: pointer;
+}
+.testimonial .card div:hover i{
+    color: rgb(0, 0, 194);
+}
+
+body.dark-mode .testimonial .card{
+    background-color: rgb(12, 17, 27);
+    box-shadow: 1px 1px 5px white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-footer h2{
+color: var(--first-color);
+margin-bottom: 15px;
+}
+.left-footer p{
+    font-size: 15px;
+    opacity: .7;
+    line-height: 19px;
+}
+.right-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.right-footer ul h2{
+    margin-bottom: 17px;
+}
+.right-footer ul li{
+    margin-block: 14px;
+    opacity: .8;
+}
+.right-footer ul i{
+    color: var(--first-color);
+    font-size: 20px;
+    margin-right: 8px;
+    transition: .6s;
+}
+body.dark-mode .right-footer ul a{
+    color: white;
+}
+.copyright{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    opacity: .9;
+    padding-inline: 20px;
+}
+
+.right-footer ul li:hover{
+ color: blue;
+}
+.right-footer ul i:hover{
+color: blue;
+transform: rotate(-180deg);
+}
+
 
 
 
